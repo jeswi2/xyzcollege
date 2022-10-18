@@ -1,0 +1,85 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+<div class="row g-3">
+    <div class="col col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label for="" class="form-label">Name</label>
+<input placeholder="enter your name" type="text" class="form-control"name="name"[(ngModel)]="name">
+
+    </div>
+    <div class="col col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label for="" class="form-label">Roll No</label>
+        <input placeholder="enter your roll no" type="text" class="form-control"name="rollno"[(ngModel)]="rollno">
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label for="" class="form-label">Admission No</label>
+        <input placeholder="enter your admission no" type="text" class="form-control"name="admno"[(ngModel)]="admno">
+
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">College</label>
+        <textarea placeholder="enter your college name" name="college" id="" cols="30" rows="10" class="form-control"[(ngModel)]="college"></textarea>
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label for="" class="form-label">Department</label>
+        <select name="" id="" class="form-control"name="department"[(ngModel)]="department">
+            <option value="Select">Select</option>
+            <option value="computer Science">computer Science</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Electronics Engineering">Electronics Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="civil Engineering">civil Engineering</option>
+        </select>
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label  for="" class="form-label">Blood Group</label>
+        <select name="" id="" class="form-control"name="blood"[(ngModel)]="blood">
+            <option value="Select">Select</option>
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <option value="AB-">AB-</option>
+            <option value="A-">A-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label for="" class="form-label">DOB</label>
+        <input type="date" class="form-control"name="dob"[(ngModel)]="dob">
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label for="" class="form-label">Parent Name</label>
+        <input placeholder="enter your parent name" type="text" class="form-control"name="pa_name"[(ngModel)]="pa_name">
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label for="" class="form-label">Parent Email Id</label>
+        <input placeholder="enter your parent email" type="email" class="form-control"name="pa_email"[(ngModel)]="pa_email">
+
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label for="" class="form-label">Guardian Name</label>
+        <input placeholder="enter your guardian name" type="text" class="form-control" name="g_name"[(ngModel)]="g_name">
+
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">Guardian Address</label>
+        <textarea name="g_address" [(ngModel)]="g_address" id="" cols="30" rows="10" class="form-control"></textarea>
+
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <button class="btn btn-success"(click)="readValues()"[disabled]="status">Submit</button>
+    </div>
+</div>
+
+
+            </div>
+            </div>
+            </div>
