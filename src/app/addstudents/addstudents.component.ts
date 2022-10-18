@@ -50,6 +50,7 @@ readValues=()=>{
   this.pa_email=""
   this.g_name=""
   this.g_address=""
+  this.status=true
 
 }
 
