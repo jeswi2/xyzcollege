@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AddstudentsComponent } from './addstudents/addstudents.component';
 import { ViewstudentsComponent } from './viewstudents/viewstudents.component';
+import { AddfacultyComponent } from './addfaculty/addfaculty.component';
 
 
 const appRoutes:Routes=[
@@ -24,6 +25,9 @@ const appRoutes:Routes=[
   },
   {
     path:"viewst",component:ViewstudentsComponent
+  },
+  {
+    path:"addfaculty",component:AddfacultyComponent
   }
 ]
 
@@ -34,7 +38,8 @@ const appRoutes:Routes=[
     NavbarComponent,
     HomeComponent,
     AddstudentsComponent,
-    ViewstudentsComponent
+    ViewstudentsComponent,
+    AddfacultyComponent
   ],
   imports: [
     BrowserModule,
