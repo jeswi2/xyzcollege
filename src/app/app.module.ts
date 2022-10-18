@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { AddstudentsComponent } from './addstudents/addstudents.component';
 import { ViewstudentsComponent } from './viewstudents/viewstudents.component';
 import { AddfacultyComponent } from './addfaculty/addfaculty.component';
+import { ViewfacultyComponent } from './viewfaculty/viewfaculty.component';
 
 
 const appRoutes:Routes=[
@@ -28,6 +29,9 @@ const appRoutes:Routes=[
   },
   {
     path:"addfaculty",component:AddfacultyComponent
+  },
+  {
+    path:"viewfa",component:ViewfacultyComponent
   }
 ]
 
@@ -39,7 +43,8 @@ const appRoutes:Routes=[
     HomeComponent,
     AddstudentsComponent,
     ViewstudentsComponent,
-    AddfacultyComponent
+    AddfacultyComponent,
+    ViewfacultyComponent
   ],
   imports: [
     BrowserModule,
