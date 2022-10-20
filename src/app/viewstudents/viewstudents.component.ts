@@ -20,6 +20,17 @@ fetcData=()=>{
   )
   
 }
+deletestudent=(id:any)=>{
+  let data={
+    "id":id
+  }
+  this.myapi.deletestudent(data).subscribe(
+    (response)=>{
+      alert("Deleted")
+    }
+  )
+  this.fetcData()
+}
 
 
 
