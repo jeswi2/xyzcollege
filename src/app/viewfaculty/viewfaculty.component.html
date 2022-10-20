@@ -7,7 +7,7 @@
             <table class="table table-boreded table-stripped-columns">
                 <thead>
                   <tr>
-                    
+                    <th scope="col">Id</th>
                     <th scope="col">Name</th>
                     <th scope="col">Department</th>
                     <th scope="col">Designation</th>
@@ -24,6 +24,7 @@
                 <tbody class="table-group-divider">
 
                   <tr *ngFor="let i of facultyData">
+                    <td>{{i.id}}</td>      
             <td>{{i.name}}</td>
             <td>{{i.department}}</td>
             <td>{{i.designation}}</td>
@@ -32,6 +33,7 @@
             <td>{{i.address}}</td>
             <td>{{i.number}}</td>
             <td>{{i.doj}}</td>
+            <td><button class="btn btn-danger" (click)="deletefaculty(i.id)">Delete</button></td>
             
            
             </tr>
