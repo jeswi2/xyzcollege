@@ -21,4 +21,8 @@ export class ApiService {
     return this.http.post("http://localhost:8080/deletestudent",data)
   }
 
+  searchstudent=(data:any)=>{
+    return this.http.post("http://localhost:8080/searchstudent",data)
+  }
+
 }

@@ -13,6 +13,7 @@ import { ViewstudentsComponent } from './viewstudents/viewstudents.component';
 import { AddfacultyComponent } from './addfaculty/addfaculty.component';
 import { ViewfacultyComponent } from './viewfaculty/viewfaculty.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchstudentComponent } from './searchstudent/searchstudent.component';
 
 
 const appRoutes:Routes=[
@@ -33,6 +34,9 @@ const appRoutes:Routes=[
   },
   {
     path:"viewfa",component:ViewfacultyComponent
+  },
+  {
+    path:"searchst",component:SearchstudentComponent
   }
 ]
 
@@ -45,7 +49,8 @@ const appRoutes:Routes=[
     AddstudentsComponent,
     ViewstudentsComponent,
     AddfacultyComponent,
-    ViewfacultyComponent
+    ViewfacultyComponent,
+    SearchstudentComponent
   ],
   imports: [
     BrowserModule,
