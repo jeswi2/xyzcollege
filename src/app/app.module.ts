@@ -12,6 +12,7 @@ import { AddstudentsComponent } from './addstudents/addstudents.component';
 import { ViewstudentsComponent } from './viewstudents/viewstudents.component';
 import { AddfacultyComponent } from './addfaculty/addfaculty.component';
 import { ViewfacultyComponent } from './viewfaculty/viewfaculty.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const appRoutes:Routes=[
@@ -50,7 +51,9 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

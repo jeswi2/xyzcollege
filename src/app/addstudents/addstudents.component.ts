@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-addstudents',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddstudentsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myapi:ApiService) { }
 
 name=""
 rollno=""
@@ -39,7 +40,11 @@ readValues=()=>{
     
   }
   console.log(data)
-  this.name=""
+  this.myapi.addStudent(data).subscribe(
+    (response)=>{
+      console.log(response)
+      alert("successfully added")
+      this.name=""
   this.rollno=""
   this.admno=""
   this.college=""
@@ -51,7 +56,9 @@ readValues=()=>{
   this.g_name=""
   this.g_address=""
   this.status=true
-
+    }
+  )
+  
 }
 
 
